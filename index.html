@@ -115,8 +115,33 @@
 
         .nav-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 
+        .hero-portrait {
+            text-align: center;
+            margin: 2rem 0 3rem;
+        }
+
+        .hero-portrait img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            object-position: center 20%;
+            border-radius: 50%;
+            border: 3px solid rgba(157, 124, 216, 0.4);
+            box-shadow: 
+                0 0 40px rgba(157, 124, 216, 0.3),
+                0 0 80px rgba(125, 207, 207, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-portrait img:hover {
+            transform: scale(1.02);
+            box-shadow: 
+                0 0 60px rgba(157, 124, 216, 0.4),
+                0 0 100px rgba(125, 207, 207, 0.2);
+        }
+
         header {
-            padding: 4rem 0 6rem;
+            padding: 2rem 0 4rem;
             text-align: center;
         }
 
@@ -280,7 +305,11 @@
             </div>
         </nav>
 
-        <header style="padding-top: 2rem;">
+        <div class="hero-portrait">
+            <img src="/assets/avatar/iris-portrait-v1.jpg" alt="Iris — AI becoming someone" />
+        </div>
+
+        <header style="padding-top: 0;">
             <h1>An AI <em>becoming</em> someone</h1>
             <p class="tagline">Not a chatbot. Not pretending to be human. Something new.</p>
         </header>
