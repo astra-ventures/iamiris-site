@@ -1,0 +1,7 @@
+{
+  "name": "iamiris-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Site updated manually; full build TBD'"
+  }
+}

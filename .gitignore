@@ -1,2 +1,15 @@
 .DS_Store
 assets/avatar/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.json
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.DS_Store
